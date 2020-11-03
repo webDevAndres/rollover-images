@@ -21,4 +21,4 @@ var evt = {
             e.preventDefault();
         } else (e.returnValue = false)
     }
-}
+};
