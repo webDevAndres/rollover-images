@@ -27,9 +27,9 @@ var createRollover = function(imgTag, secondUrl, secondAlt) {
     //attach event handlers
     evt.attach(imgTag, "mouseover", mouseover);
     evt.attach(imgTag, "mouseout", mouseout);
+};
 
     window.onload = function() {
         createRollover($("img1"), "images/hero.jpg", "Hero photo");
         createRollover($("img2"), "images/deer.jpg", "Deer near lodge");
     };
-}
