@@ -19,6 +19,6 @@ var evt = {
         e = e || window.event;
         if (e.preventDefault) {
             e.preventDefault();
-        } else (e.returnValue = false)
+        } else {e.returnValue = false;}
     }
 };
