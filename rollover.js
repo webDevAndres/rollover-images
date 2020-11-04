@@ -1,10 +1,10 @@
 "use strict";
 
-var $ = function(id) {
+var $ = function (id) {
     return document.getElementById(id);
 };
 
-var createRollover = function(imgTag, secondUrl, secondAlt) {
+var createRollover = function (imgTag, secondUrl, secondAlt) {
     //store first image info
     var firstUrl = imgTag.src;
     var firstAlt = imgTag.alt;
@@ -14,12 +14,12 @@ var createRollover = function(imgTag, secondUrl, secondAlt) {
     image.src = secondUrl;
 
     // create event handlers
-    var mouseover = function() {
+    var mouseover = function () {
         imgTag.src = secondUrl;
         imgTag.alt = secondAlt;
     };
 
-    var mouseout = function() {
+    var mouseout = function () {
         imgTag.src = firstUrl;
         imgTag.Alt = firstAlt;
     };
@@ -29,7 +29,7 @@ var createRollover = function(imgTag, secondUrl, secondAlt) {
     evt.attach(imgTag, "mouseout", mouseout);
 };
 
-    window.onload = function() {
-        createRollover($("img1"), "images/hero.jpg", "Hero photo");
-        createRollover($("img2"), "images/deer.jpg", "Deer near lodge");
-    };
+window.onload = function () {
+    createRollover($("img1"), "images/hero.jpg", "Hero photo");
+    createRollover($("img2"), "images/deer.jpg", "Deer near lodge");
+};
