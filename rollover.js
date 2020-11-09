@@ -21,7 +21,7 @@ var createRollover = function(imgTag, secondUrl, secondAlt) {
 
     var mouseout = function() {
         imgTag.src = firstUrl;
-        imgTag.Alt = firstAlt;
+        imgTag.alt = firstAlt;
     };
 
     //attach event handlers
